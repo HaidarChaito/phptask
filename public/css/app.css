@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body{
+    background-color: #EAEAEA;
+}
+
+svg{
+    height: 50px;
+    width: 50px;
+}
+
+.err{
+    color: #EAEAEA;
+}
+
+a{
+    color: #FF2E63;
+    text-decoration: none;
+    font-weight: 400;
+}
+input{
+    background-color: #252A34;
+    padding: 15px;
+    color: #49a09d;
+    border-image: linear-gradient(45deg, #49a09d, #5f2c82);
+    border-width: 5pt;
+    border-image-slice: 1;
+    outline: invert;
+}
+
+
+html,
+body {
+    font-family: sans-serif;
+    height: 100%;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    background: -webkit-linear-gradient(45deg, #49a09d, #5f2c82);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-weight: 100;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #252A34;
+}
+
+th {
+    text-align: left;
+}
+
+thead th {
+    background-color: #55608f;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.myspan {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+}
+.mybutton {
+    width: 160px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #252A34;
+    font-weight: 100;
+    cursor: pointer;
+    height: 20px;
+    margin: 3px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.mybutton:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.mybutton:focus {
+    outline: none;
+}
+
+.mybutton {
+    background-image: linear-gradient(to right,
+            #667eea,
+            #764ba2,
+            #6b8dd6,
+            #8e37d7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
